@@ -2,19 +2,15 @@
 
 int main()
 {
-    char c;
-    printf("Enter a Letter : ");
-    scanf("%c", &c);
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
+    float a , b ,c;
+    printf("enter Three Numbers: \n");
+    scanf("%f%f%f" , &a, &b, &c);
+    if (a >=b && a >=c)
     {
-        printf("%c is  Vowel", c);
-    }
-    else if (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
-    {
-        printf("%c is  Vowel", c);
-    }
-    else
-    {
-        printf("%c is Constant", c);
+        printf("Largest number is %.2f", a);
+    }else if(b >=a && b>=c){
+        printf("Largest number is %.2f", b);
+    }else{
+        printf("Largest number is %.2f", c);
     }
 }
